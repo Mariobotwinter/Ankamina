@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-top">
           <div className="footer-brand">
-            <div className="footer-name">Dianna</div>
-            <div className="footer-sub">Nail Artist • Uricani</div>
+            <div className="footer-name">Ankamina</div>
+            <div className="footer-sub">Nail Artist • Sector 1</div>
           </div>
 
           <div className="footer-info">
@@ -19,7 +19,7 @@ export default function Footer() {
               <span>Locație:</span> <strong>Uricani</strong>
             </div>
             <div className="footer-line">
-              <span>Instagram:</span> <strong>@dianna_nailartist</strong>
+              <span>Instagram:</span> <strong>@ankamina_nails</strong>
             </div>
           </div>
         </div>
