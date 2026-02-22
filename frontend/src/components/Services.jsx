@@ -3,35 +3,52 @@ import "../styles/Services.css";
 
 export default function Services() {
   const items = [
-    { title: "Construcție cu gel", desc: "Rezistență, formă corectă, apex frumos, finisaj premium." },
-    { title: "Întreținere", desc: "Refacere aspect + echilibrare pentru un look fresh, fără compromis." },
-    { title: "Tips reutilizabili", desc: "Rapid, curat, ideal pentru lungimi controlate și confort." },
-    { title: "Design / French / Babyboomer", desc: "Design fin, elegant sau modern – în funcție de stilul tău." },
+    {
+      title: "Construcție cu gel",
+      desc: "Structură corectă, apex echilibrat și rezistență reală. Ideal pentru lungimi medii sau extreme."
+    },
+    {
+      title: "Întreținere",
+      desc: "Refacere proporții și aspect fresh fără a compromite sănătatea unghiei."
+    },
+    {
+      title: "Tips reutilizabili",
+      desc: "Aplicare rapidă, confort sporit și rezultate curate, controlate."
+    },
+    {
+      title: "Design personalizat",
+      desc: "French modern, babyboomer, minimal sau artistic – adaptat stilului tău."
+    }
   ];
 
   return (
     <section className="services" id="servicii">
       <div className="container">
+
         <div className="services-head">
-          <span className="services-label">CE OFER</span>
-          <h2 className="services-title">Servicii premium</h2>
+          <span className="services-label">SERVICII</span>
+          <h2 className="services-title">Eleganță în fiecare detaliu</h2>
           <p className="services-sub">
-            Fiecare set este făcut cu atenție la detalii, igienă și produse bune.
+            Tehnică curată, produse premium și atenție reală la proporții.
           </p>
         </div>
 
-        <div className="services-list">
+        <div className="services-grid">
           {items.map((s, idx) => (
-            <div className="services-row" key={idx}>
-              <div className="services-index">{String(idx + 1).padStart(2, "0")}</div>
-              <div className="services-body">
-                <div className="services-row-title">{s.title}</div>
-                <div className="services-row-desc">{s.desc}</div>
+            <div className="service-card" key={idx}>
+              <div className="service-number">
+                {String(idx + 1).padStart(2, "0")}
               </div>
-              <div className="services-line" />
+
+              <h3 className="service-title">{s.title}</h3>
+
+              <p className="service-desc">{s.desc}</p>
+
+              <div className="service-hover-line" />
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );
