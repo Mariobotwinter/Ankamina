@@ -16,7 +16,7 @@ export default function Footer() {
               <span>Programări:</span> <strong>WhatsApp</strong>
             </div>
             <div className="footer-line">
-              <span>Locație:</span> <strong>Uricani</strong>
+              <span>Locație:</span> <strong>Sector 1</strong>
             </div>
             <div className="footer-line">
               <span>Instagram:</span> <strong>@ankamina_nails</strong>
