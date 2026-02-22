@@ -38,8 +38,8 @@ export default function Header() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
         >
-          <span className="brand-name">Dianna</span>
-          <span className="brand-sub">Nail Artist • Uricani</span>
+          <span className="brand-name">Ankamina</span>
+          <span className="brand-sub">Nail Tech • Sector 1</span>
         </button>
 
         <nav className="nav-desktop" aria-label="Primary">
