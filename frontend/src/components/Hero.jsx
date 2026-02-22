@@ -41,7 +41,7 @@ export default function Hero() {
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <span className="hero-label">DIANNA • NAIL ARTIST • URICANI</span>
+            <span className="hero-label">ANKAMINA • NAIL ARTIST • SECTOR 1</span>
 
             <h1 className="hero-title">
               Unghii <span className="hero-title-accent">premium</span>, look curat și feminin
