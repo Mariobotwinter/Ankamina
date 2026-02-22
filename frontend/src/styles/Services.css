@@ -1,0 +1,98 @@
+.services{
+  position: relative;
+  overflow: hidden;
+  padding: var(--spacing-2xl) 0;
+}
+
+.services::before{
+  content:"";
+  position:absolute;
+  inset:-140px -140px auto auto;
+  width:540px;
+  height:540px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,134,181,0.16) 0%, transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(240,223,212,0.10) 0%, transparent 62%);
+  filter: blur(18px);
+  opacity: 0.95;
+  pointer-events:none;
+}
+
+.services-head{
+  text-align:center;
+  margin-bottom: 34px;
+}
+
+.services-label{
+  font-family: var(--font-secondary);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,179,209,0.88);
+}
+
+.services-title{ margin-top: 14px; }
+.services-sub{
+  max-width: 760px;
+  margin: 10px auto 0;
+  color: var(--text-2);
+  line-height: 1.9;
+}
+
+.services-list{
+  max-width: 980px;
+  margin: 0 auto;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.services-row{
+  position: relative;
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 16px;
+  padding: 22px 18px;
+}
+
+.services-row:hover{
+  background: rgba(255,255,255,0.04);
+}
+
+.services-index{
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: rgba(255,179,209,0.82);
+}
+
+.services-row-title{
+  font-family: var(--font-primary);
+  font-size: 1.35rem;
+  color: var(--text-0);
+}
+
+.services-row-desc{
+  margin-top: 6px;
+  color: var(--text-2);
+  line-height: 1.75;
+}
+
+.services-line{
+  position: absolute;
+  left: 18px; right: 18px; bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,179,209,0.18), transparent);
+}
+
+.services-row:last-child .services-line{ display: none; }
+
+@media (max-width: 640px){
+  .services-row{ grid-template-columns: 62px 1fr; }
+  .services-row-title{ font-size: 1.2rem; }
+}
